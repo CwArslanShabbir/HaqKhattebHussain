@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Custom Title Bar -->
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="27dp">
+        <ImageView
+            android:id="@+id/backto_home"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/close_drawer_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lets_go_li_height">
+
+        <!-- News Updates Linearlayout -->
+        <LinearLayout
+            android:id="@+id/action_news_updates"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+            <ImageView
+                android:padding="20dp"
+                android:src="@drawable/news_update"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="News Updates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:layout_width = "1dp"
+            android:layout_height="200dp"/>
+
+        <!-- Videos Linearlayout -->
+        <LinearLayout
+            android:id="@+id/action_videos"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+            <ImageView
+                android:src="@drawable/video"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="Videos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:background="@color/black"
+        android:layout_gravity="center"
+        android:layout_width = "match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/lets_go_li_height">
+
+        <!-- Notification Linearlayout -->
+        <LinearLayout
+            android:id="@+id/action_notification"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+            <ImageView
+                android:src="@drawable/notification"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="Notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:layout_width = "1dp"
+            android:layout_height="200dp"/>
+
+        <!-- About Linearlayout -->
+        <LinearLayout
+            android:id="@+id/action_about"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+            <ImageView
+                android:src="@drawable/about"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="About"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/black"
+        android:layout_gravity="center"
+        android:layout_width = "match_parent"
+        android:layout_height="1dp"/>
+    <!--  -Contact us Linearlayout -->
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lets_go_li_height">
+        <LinearLayout
+            android:id="@+id/action_contact_us"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+            <ImageView
+                android:src="@drawable/contact_us"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="Contact Us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:layout_width = "1dp"
+            android:layout_height="200dp"/>
+        <!-- black imageView -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- last view layout for -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+        <View
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

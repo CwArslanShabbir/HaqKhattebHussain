@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#121212</color>
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorAccent">#151515</color>
+
+
+    <!--  login page title color  -->
+    <color name="grey">#616161</color>
+    <color name="white">#ffffff</color>
+    <color name="purple">#a04cff</color>
+    <color name="black">#000000</color>
+
+</resources>

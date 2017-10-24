@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/main_login_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/grey"
+            android:text="Email"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:padding="15dp"
+            android:gravity="left"
+            android:textAlignment="center"
+            android:hint="youremail@gmail.com"
+            android:drawablePadding="5dp"
+            android:textColorHint="#e3d1d1d1"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/edit_text_email_icon"
+            android:drawableLeft="@drawable/edit_text_email_icon">
+        </EditText>
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_gravity="center"
+            android:textColor="@color/grey"
+            android:text="Password"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:ems="10"
+            android:inputType="numberPassword|textPassword|"
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+             android:padding="15dp"
+            android:gravity="left"
+            android:textAlignment="center"
+            android:hint="enter your password"
+            android:drawablePadding="5dp"
+            android:textColorHint="#e3d1d1d1"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/edit_text_password_icon"
+            android:drawableLeft="@drawable/edit_text_password_icon">
+        </EditText>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/grey"
+                android:text="Forgot password?"
+                android:layout_margin="5dp"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/purple"
+                android:text="Tap here"
+                android:layout_margin="5dp"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:text="Login"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:onClick="login"
+            android:fontFamily="monospace"
+            android:background="@drawable/login_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/grey"
+                android:layout_gravity="center"
+                android:layout_width = "132dp"
+                android:layout_height="1dp"/>
+            <TextView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_gravity="center"
+                android:textColor="@color/grey"
+                android:text="OR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View android:background="@color/grey"
+                android:layout_gravity="center"
+                android:layout_width = "132dp"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Give id to linearlayout for facebook button-->
+            <LinearLayout
+                android:layout_marginRight="-1dp"
+                android:gravity="center"
+                android:background="@drawable/fb_left"
+                android:layout_width="150dp"
+                android:layout_height="50dp">
+                <Button
+                    android:background="@drawable/f_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+            <!--Give id to linearlayout for gmail button-->
+             <LinearLayout
+                 android:layout_marginLeft="-1dp"
+                 android:gravity="center"
+                 android:background="@drawable/g_right"
+                 android:layout_width="150dp"
+                 android:layout_height="50dp">
+                 <Button
+                    android:background="@drawable/g_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="35px" />
+             </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
